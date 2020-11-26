@@ -1,4 +1,7 @@
-var assert = require('assert')
+var assert = require('assert');
+require 'coveralls';
+Coveralls.wear!
+
 
 describe('isEqual', function(){
     describe('#something', function(){
