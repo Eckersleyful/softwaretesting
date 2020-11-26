@@ -1,5 +1,6 @@
 sudo: false
 language: node_js
+repo_token: uK1dJ4J9cE1cO3et6luckJ6nraEZr5snh
 node_js:
   - "node"
 env:
