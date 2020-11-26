@@ -1,3 +1,5 @@
 language: node_js
 rvm:
 - v14.13.0
+
+script: -echo "Yeetus"
