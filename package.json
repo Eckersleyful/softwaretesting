@@ -4,7 +4,7 @@
   "description": "Helo am repo",
   "main": "index.js",
   "scripts": {
-    "test": "mocha" 
+    "test": "mocha"  
   },
   "repository": {
     "type": "git",
