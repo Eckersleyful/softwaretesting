@@ -1,7 +1,9 @@
 language: node_js
-rvm:
-- v14.13.0
+node_js:
+- "stable"
 
+directories:
+- "node_modules"
 script:
   
- - ./testcases/basictest.js
+ - npm run test
