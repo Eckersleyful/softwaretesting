@@ -7,4 +7,4 @@ directories:
 script:
   - npm run test
 after_script:
-  - "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+- ./node_modules/.bin/mocha test/**.js -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js
