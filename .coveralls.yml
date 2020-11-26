@@ -4,7 +4,7 @@ repo_token: uK1dJ4J9cE1cO3et6luckJ6nraEZr5snh
 node_js:
   - "node"
 env:
-  global:
+  global:  
     - COVERALLS_PARALLEL=true
 jobs:
   include:
