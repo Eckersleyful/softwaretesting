@@ -4,7 +4,9 @@
   "description": "Helo am repo",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"  
+    "test": "mocha",
+    "coverage": "'npm bin'/istanbul cover ./test/test.js",
+    "coveralls": "npm run-script coverage && node bin/coveralls.js < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   },
   "devDependencies": {
     "coveralls": "^3.1.0",
+    "istanbul": "^0.4.5",
     "mocha": "^8.2.1",
     "mocha-lcov-reporter": "^1.3.0"
   }
