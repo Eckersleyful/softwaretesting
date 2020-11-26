@@ -3,4 +3,5 @@ rvm:
 - v14.13.0
 
 script:
+  
  - ./testcases/basictest.js
