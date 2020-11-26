@@ -1,11 +1,13 @@
 sudo: false
 language: node_js
-repo_token: uK1dJ4J9cE1cO3et6luckJ6nraEZr5snh
 node_js:
   - "node"
 env:
   global:
+    - COVERALLS_SERVICE_NAME=travis
     - COVERALLS_PARALLEL=true
+    - COVERALLS_REPO_TOKEN=uK1dJ4J9cE1cO3et6luckJ6nraEZr5snh
+    - COVERALLS_GIT_BRANCH=master
 jobs:
   include:
     - script: COVERALLS_FLAG_NAME=test make test-coveralls-1
