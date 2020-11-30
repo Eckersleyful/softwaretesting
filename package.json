@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "set NODE ENV_ = test & nyc _mocha",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
   },
   "nyc": {
     "all": true,
@@ -15,7 +15,7 @@
     ],
     "exclude": [
       "repototest\\COMP.SE.200-2020-assignment\\src\\.internal"
-      
+
     ],
     "instrument": true 
   },
