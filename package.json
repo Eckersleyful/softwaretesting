@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "NODE_ENV=test mocha",
-    "coverage": "NODE_ENV=test nyc report --reporter=text-lcov npm run test | coveralls"
+    "coverage": "NODE_ENV=test nyc report --reporter=text-lcov | coveralls"
   },
   "nyc": {
     "all": true,
