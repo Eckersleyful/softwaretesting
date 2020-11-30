@@ -8,6 +8,16 @@
     "test": "nyc mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
+  "nyc": {
+    "all": true,
+    "include": [
+      "repototest\\COMP.SE.200-2020-assignment\\src"
+    ],
+    "exclude": [
+      "repototest\\COMP.SE.200-2020-assignment\\src\\.internal"
+    ],
+    "instrument": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Eckersleyful/softwaretesting.git"
