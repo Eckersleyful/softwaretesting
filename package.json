@@ -15,8 +15,9 @@
     ],
     "exclude": [
       "repototest\\COMP.SE.200-2020-assignment\\src\\.internal"
+      
     ],
-    "instrument": true
+    "instrument": true 
   },
   "repository": {
     "type": "git",
