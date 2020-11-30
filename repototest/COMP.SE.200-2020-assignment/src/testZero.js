@@ -1,4 +1,3 @@
-import isLength from './isLength.js'
 
 /**
  * Checks if `value` is array-like. A value is considered array-like if it's
@@ -24,6 +23,7 @@ import isLength from './isLength.js'
  * // => false
  */
 function isValueZero(value) {
+  
   return value === 0;
 }
 

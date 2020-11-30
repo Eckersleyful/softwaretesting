@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Helo am repo",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "nyc --reporter=html --reporter=text mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
-    
   },
   "repository": {
     "type": "git",
@@ -22,9 +22,11 @@
   "dependencies": {
     "express": "^4.17.1",
     "nyc": "^15.1.0",
-    "package.json": "^2.0.1"
+    "package.json": "^2.0.1",
+    "require": "^2.4.20"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "coveralls": "^3.1.0",
     "istanbul": "^0.4.5",
     "mocha": "^8.2.1",
