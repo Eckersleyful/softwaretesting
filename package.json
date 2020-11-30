@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "set NODE ENV_ = test & nyc _mocha",
-    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+    "mocha": "_mocha -b -R spec",
+    "test": "nyc npm run mocha",
+    "coverage": "nyc npm run mocha && shx cat ./coverage/lcov.info | node ./bin/coveralls.js --verbose"
   },
   "nyc": {
     "all": true,
@@ -16,6 +17,10 @@
     "exclude": [
       "repototest\\COMP.SE.200-2020-assignment\\src\\.internal"
 
+    ],
+    "reporter": [
+      "lcov",
+      "text-summary"
     ],
     "instrument": true 
   },
