@@ -7,7 +7,7 @@
   "scripts": {
     "mocha": "_mocha -b -R spec",
     "test": "nyc npm run mocha",
-    "coverage": "nyc npm run mocha && shx cat ./coverage/lcov.info | node coveralls --verbose"
+    "coverage": "nyc npm run mocha && shx cat ./coverage/lcov.info | coveralls --verbose"
   },
   "nyc": {
     "all": true,
