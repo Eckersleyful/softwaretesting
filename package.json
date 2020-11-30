@@ -10,6 +10,7 @@
   },
   "nyc": {
     "all": true,
+    
     "include": [
       "repototest\\COMP.SE.200-2020-assignment\\src"
     ],
