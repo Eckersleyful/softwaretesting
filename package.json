@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "SET NODE_ENV = test & mocha",
-    "coverage": "SET NODE_ENV = test & nyc --reporter=text-lcov npm run test | coveralls"
+    "test": "set NODE_ENV = test & mocha",
+    "coverage": "set NODE_ENV = test & nyc --reporter=text-lcov npm run test | coveralls"
   },
   "nyc": {
     "all": true,
