@@ -2,5 +2,4 @@ language: node_js
 node_js:
   - "node"
 after_success:
-  - NODE_OPTIONS = experimental-vm-modules
   - npm run coverage 
