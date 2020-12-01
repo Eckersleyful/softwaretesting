@@ -13,7 +13,7 @@ describe('isEqual', function(){
 });
 
 
-describe('isZero', function(){
+describe('isValueZero', function(){
     describe('#something', function(){
         it("True if parameter is zero", function(){   
             assert.strictEqual(true, isZero(0));
