@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "nyc _mocha",
-    "coverage": "nyc report --reporter=text-lcov | coveralls --verbose"
+    "coverage": "npm run test & nyc report --reporter=text-lcov | coveralls --verbose"
   },
   "nyc": {
     "all": true,
