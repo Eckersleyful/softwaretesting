@@ -1,7 +1,7 @@
 language: node_js
 env:
   global:
-    - NODE_OPTIONS = "--experimental-vm-modules"
+    - NODE_OPTIONS = "experimental-vm-modules"
 node_js:
   - "node"
 after_success:
