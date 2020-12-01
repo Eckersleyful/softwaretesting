@@ -5,9 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "mocha": "_mocha -b -R spec",
-    "test": "nyc npm run mocha",
-    "coverage": "nyc npm run mocha && shx cat ./coverage/lcov.info | coveralls --verbose"
+    "test": "nyc _mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls --verbose"
   },
   "nyc": {
     "all": true,
