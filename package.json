@@ -50,6 +50,7 @@
   "jest": {
     "transform": {
       "^.+\\.(js|jsx)?$": "babel-jest"
-    }
+    },
+    "transformIgnorePatterns": ["softwaretesting/node_modules/"]
   }
 }
