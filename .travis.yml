@@ -1,8 +1,5 @@
 language: node_js
-env:
-  global:
-    - NODE_OPTIONS = experimental-vm-modules
-    - NODE_ENV = jest
+
 node_js:
   - "node"
 after_success:

@@ -45,7 +45,10 @@
   "plugins": [
     "@babel/plugin-proposal-export-default-from"
   ],
-  "transform": {
-    "\\.[jt]sx?$": "babel-jest"
+  "jest": {
+    "transform": {
+      "\\.[jt]sx?$": "babel-jest"
+    }
   }
+  
 }
