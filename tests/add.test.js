@@ -1,7 +1,7 @@
 import add from '../repototest/COMP.SE.200-2020-assignment/src/add.js';
-import assert from 'assert';
 import expect from 'chai';
-
+import pkg from "chai";
+const { expect, assert } = pkg;
 
 describe('add', function(){
     describe('#adding two positive values', function(){
