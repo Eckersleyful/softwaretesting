@@ -37,9 +37,7 @@
   ],
   "jest": {
     "collectCoverageFrom": [
-      "repototest/**/src",
-      "!repototest/**/src/.internal"
-      
+      "repototest/**/src/{!(/internal),}.js"
     ]
   }
 
