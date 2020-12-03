@@ -1,5 +1,4 @@
 import add from '../repototest/COMP.SE.200-2020-assignment/src/add.js';
-import expect from 'chai';
 import pkg from "chai";
 const { expect, assert } = pkg;
 
