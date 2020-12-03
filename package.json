@@ -36,9 +36,7 @@
     "@babel/plugin-proposal-export-default-from"
   ],
   "jest": {
-    "roots": [
-      "\\repototest\\COMP.SE.200-2020-assignment\\src"
-    ]
+
   }
 
 
