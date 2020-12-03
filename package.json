@@ -34,15 +34,7 @@
   },
   "plugins": [
     "@babel/plugin-proposal-export-default-from"
-  ],
-  "jest": {
-
-    "collectCoverageFrom": [
-      "./repototest/**/src/*.js",
-      "!./repototest/**/src/.internal"
-
-    ]
-  }
+  ]
 
 
 }
