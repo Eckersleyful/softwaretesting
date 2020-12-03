@@ -12,7 +12,7 @@
     "coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage && coveralls < coverage/lcov.info"
   },  
   "nyc": {
-    "all": true,
+    
     "reporter": [
       "lcov",
       "text-summary"
