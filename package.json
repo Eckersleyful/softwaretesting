@@ -4,9 +4,26 @@
   "description": "Helo am repo",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "coveralls": "./bin/coveralls.js"
+  },
   "scripts": {
-    "test": "_mocha test/ --exit --timeout 12000",
+    "test": "_mocha test/test --exit --timeout 12000",
     "coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage && coveralls < coverage/lcov.info"
+  },  
+  "nyc": {
+    "all": true,
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    
+    "include": [
+      "repototest"
+    ],
+    "exclude": [
+      "repototest\\**\\src\\.internal"
+    ]
   },
   "repository": {
     "type": "git",
