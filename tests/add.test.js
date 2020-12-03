@@ -5,8 +5,8 @@ const { expect, assert } = pkg;
 describe('add', function(){
     describe('#adding two positive values', function(){
         it("Try passing 1+1 = 2", function(){   
-           expect(add(1,1).to.eql(2));
-            
+           expect(add(1,1)).to.eql(2);
+
         });
     });
 });
@@ -15,7 +15,7 @@ describe('add', function(){
 describe('add', function(){
     describe('#adding two negative values', function(){
         it("Try passing -1-1 = -2", function(){   
-            expect(add(-1,-1).to.eql(-2));
+            expect(add(-1,-1)).to.eql(-2);
         });
     });
 });
