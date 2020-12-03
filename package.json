@@ -11,20 +11,6 @@
     "test": "_mocha test/*.test.js --exit --timeout 12000",
     "coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage && coveralls < coverage/lcov.info"
   },  
-  "nyc": {
-    
-    "reporter": [
-      "lcov",
-      "text-summary"
-    ],
-    
-    "include": [
-      "repototest\\**\\src\\"
-    ],
-    "exclude": [
-      "repototest\\**\\src\\.internal\\"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Eckersleyful/softwaretesting.git"
@@ -51,7 +37,15 @@
   },
   "plugins": [
     "@babel/plugin-proposal-export-default-from"
-  ]
+  ],
+  "jest":
+  {
+    "collectCoverageFrom": [
+      "**/repototest/**/src/",
+      "!**/repototest/**/src/.internal"
+    ]
+  }
+
 
 
 }
