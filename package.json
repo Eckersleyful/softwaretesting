@@ -8,7 +8,7 @@
     "coveralls": "./bin/coveralls.js"
   },
   "scripts": {
-    "test": "_mocha tests/*.test.js --exit --timeout 12000",
+    "test": "_mocha tests/*.test.js --silent --exit --timeout 12000",
     "coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage && coveralls < coverage/lcov.info"
   },  
   "repository": {

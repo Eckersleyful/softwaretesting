@@ -19,7 +19,7 @@ describe('at', function(){
 
 describe('at', function(){
     describe('#Creates an array of values corresponding to `paths` of `object`.', function(){
-        it("Try empty object, with correct object paths, should return empty array", function(){   
+        it("Try empty object, with correct object paths, should return empty", function(){   
                 const object = {}
                 expect(at(object, ['a[0].b.c', 'a[1]'])).to.eql([]);
 
