@@ -13,15 +13,22 @@ describe('at', function(){
                 expect(at(object, ['a[0].b.c', 'a[1]'])).to.eql([3, 4]);
 
         });
-    });
-});
+        it("Try example object, with slight different set ofcorrect object paths", function(){   
+            const object = { 'a': [
+                             { 'b': 
+                                {'c': 3 }}
+                              , 4]}
+            expect(at(object, ['a[1]'])).to.eql([4]);
 
+        });
+        it.skip("Try empty object, with correct object paths, should return empty array", function(){   
+            const object = {}
+            expect(at(object, ['a[0].b.c', 'a[1]'])).to.be.empty;
 
-describe('at', function(){
-    describe('#Creates an array of values corresponding to `paths` of `object`.', function(){
-        it("Try empty object, with correct object paths, should return empty", function(){   
-                const object = {}
-                expect(at(object, ['a[0].b.c', 'a[1]'])).to.eql([]);
+        });
+        it.skip("Try with integer instead of JSON object, with correct object paths, should throw an error", function(){   
+            const object = {}
+            expect(function() { at (12, ['a[0].b.c', 'a[1]'])}).to.throw();
 
         });
     });
