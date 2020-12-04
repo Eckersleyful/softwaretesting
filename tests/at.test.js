@@ -1,4 +1,4 @@
-import add from '../repototest/COMP.SE.200-2020-assignment/src/at.js';
+import at from '../repototest/COMP.SE.200-2020-assignment/src/at.js';
 import pkg from "chai";
 const { expect, assert } = pkg;
 at(object, ['a[0].b.c', 'a[1]'])
