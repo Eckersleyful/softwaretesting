@@ -11,7 +11,9 @@ import baseFlatten from './.internal/baseFlatten.js'
  * @returns {Array} Returns the picked values.
  * @example
  *
- * const object = { 'a': [{ 'b': { 'c': 3 } }, 4] }
+ * const object = { 'a': [
+ *                  { 'b': {
+ *                    'c': 3 }}, 4]}
  *
  * at(object, ['a[0].b.c', 'a[1]'])
  * // => [3, 4]
