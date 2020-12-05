@@ -3,17 +3,17 @@ import pkg from "chai";
 const { expect, assert } = pkg;
 
 
-describe('camelCase', function(){
+describe.skip('camelCase', function(){
     describe('#Converts string into camelcase, (camelExample). All non-alphabetic characters are omitted', function(){
-        it("Try example string without additional chars", function(){   
+        it.skip("Try example string without additional chars", function(){   
                 
             expect(camelCase("camel me")).to.eql("camelMe");
 
         });
-        it("Try string with additional chars", function(){   
+        it.skip("Try string with additional chars", function(){   
             expect(camelCase("-camel -me--")).to.eql("camelMe");
         });
-        it("Try capitalized string with additional chars", function(){   
+        it.skip("Try capitalized string with additional chars", function(){   
             expect(camelCase("-CAMEL -ME--")).to.eql("camelMe");
 
         });
