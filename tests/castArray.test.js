@@ -3,7 +3,7 @@ import pkg from "chai";
 const { expect, assert } = pkg;
 
 
-describe.skip('castArray', function(){
+describe('castArray', function(){
     describe('Casts and returns `value` as an array if its not one', function(){
         it("Try simple alphabetic character", function(){   
                 

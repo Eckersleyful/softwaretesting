@@ -3,7 +3,7 @@ import pkg from "chai";
 const { expect, assert } = pkg;
 
 
-describe.skip('camelCase', function(){
+describe('camelCase', function(){
     describe('#Converts string into camelcase, (camelExample). All non-alphabetic characters are omitted', function(){
         it("Try example string without additional chars", function(){   
                 

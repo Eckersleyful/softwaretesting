@@ -3,7 +3,7 @@ import pkg from "chai";
 const { expect, assert } = pkg;
 
 
-describe.skip('chunk', function(){
+describe('chunk', function(){
     describe(`#Creates an array of elements split into groups the length of size
     If array cant be split evenly, the final chunk will be the remaining
     elements`, function(){

@@ -3,7 +3,7 @@ import pkg from "chai";
 const { expect, assert } = pkg;
 
 
-describe.skip('defaultTo', function(){
+describe('defaultTo', function(){
     describe(`Checks value to determine whether a default value should be returned in
     its place. The defaultValue is returned if value is NaN, null,
     or undefined`, function(){

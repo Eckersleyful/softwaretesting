@@ -3,7 +3,7 @@ import pkg from "chai";
 const { expect, assert } = pkg;
 
 
-describe.skip('compact', function(){
+describe('compact', function(){
     describe(`Creates an array with all falsey values removed. The values false, null,
     0, "", undefined, and NaN are falsey`, function(){
         it("Try all values that should be removed by the function", function(){   

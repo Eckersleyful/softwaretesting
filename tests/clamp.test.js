@@ -3,7 +3,7 @@ import pkg from "chai";
 const { expect, assert } = pkg;
 
 
-describe.skip('clamp', function(){
+describe('clamp', function(){
     describe(`#Clamps number within the inclusive lower and upper bounds.`, function(){
         it("Try lower bound clamp", function(){   
                 
