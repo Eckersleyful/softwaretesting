@@ -17,6 +17,7 @@ function compact(array) {
 
   for (const value of array) {
     if (value) {
+      
       result[resIndex++] = value
     }
   }

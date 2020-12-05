@@ -43,7 +43,8 @@
     "collectCoverageFrom": [
       "**/repototest/**/src/**",
       "!**/repototest/**/src/.internal/**"
-    ]
+    ],
+    "coverageReporters": ["text","html"]
   }
 
 
