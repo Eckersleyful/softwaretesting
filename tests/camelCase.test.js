@@ -5,18 +5,23 @@ const { expect, assert } = pkg;
 
 describe.skip('camelCase', function(){
     describe('#Converts string into camelcase, (camelExample). All non-alphabetic characters are omitted', function(){
-        it.skip("Try example string without additional chars", function(){   
+        it("Try example string without additional chars", function(){   
                 
             expect(camelCase("camel me")).to.eql("camelMe");
 
         });
-        it.skip("Try string with additional chars", function(){   
+        it("Try string with additional chars", function(){   
             expect(camelCase("-camel -me--")).to.eql("camelMe");
         });
-        it.skip("Try capitalized string with additional chars", function(){   
+        it("Try capitalized string with additional chars", function(){   
             expect(camelCase("-CAMEL -ME--")).to.eql("camelMe");
 
         });
+        it("Try empty string", function(){   
+            expect(camelCase("")).to.eql("");
+
+        });
+            
 
     });
 });
