@@ -22,9 +22,26 @@ describe('toFinite', function(){
         });
         it("Try over MAX value integer", function(){   
                 
-            expect(toFinite(Number.MAX_SAFE_INTEGER+1)).to.deep.equal(Number.MAX_SAFE_INTEGER);
+            expect(toFinite(1.7976931348623157e+308+1)).to.deep.equal(1.7976931348623157e+308);
 
         });
+        it("Try 0", function(){   
+                
+            expect(toFinite(0)).to.deep.equal(0);
+
+        });
+
+        it("Try null", function(){   
+                
+            expect(toFinite(null)).to.deep.equal(0);
+
+        });
+        it("Try infinity", function(){   
+                
+            expect(toFinite(Infinity)).to.deep.equal(1.7976931348623157e+308);
+
+        });
+
 
 
 
