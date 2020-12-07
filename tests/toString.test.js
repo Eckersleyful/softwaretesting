@@ -3,39 +3,38 @@ import pkg from "chai";
 const { expect, assert } = pkg;
 
 
-describe.skip('toNumber', function(){
+describe('toString', function(){
     describe(`Converts value to a number.`, function(){
-        it("Try valid float number", function(){   
+        it("Try valid string", function(){   
                 
-            expect(toNumber(4.5)).to.deep.equal(4.5);
+            expect(toString("cat")).to.deep.equal("cat");
 
         });
-        it("Try typecasting string to number", function(){   
+        it("Try empty string", function(){   
                 
-            expect(toNumber("4.5")).to.deep.equal(4.5);
-
-        });
-
-        it("Try over MAX value integer", function(){   
-                
-            expect(toNumber(1.7976931348623157e+308+1)).to.deep.equal(1.7976931348623157e+308);
-
-        });
-        it("Try 0", function(){   
-                
-            expect(toNumber(0)).to.deep.equal(0);
+            expect(toString("")).to.deep.equal("");
 
         });
 
-        it("Try null", function(){   
+        it.skip("Try null", function(){   
                 
-            expect(toNumber(null)).to.deep.equal(0);
+            expect(toString(null)).to.deep.equal('');
 
         });
-        it("Try infinity", function(){   
+        it.skip("Try undefined", function(){   
                 
-            expect(toNumber(Infinity)).to.deep.equal(Infinity);
+            expect(toString(undefined)).to.deep.equal('');
 
+        });
+        it("Try an array with integer elements", function(){   
+                
+            expect(toString([1,2,3])).to.deep.equal("1,2,3");
+
+        });
+
+        it("Try integer", function(){   
+                
+            expect(toString(3)).to.deep.equal("3");
         });
 
 
